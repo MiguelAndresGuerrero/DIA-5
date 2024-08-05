@@ -1,6 +1,5 @@
 from typing import Counter
 #le damos la bienvenida al usuario
-
 print("Hola Usuario :D ")
 print({f"Cuantos ejercicios quieres añadir? "})
 
@@ -21,7 +20,7 @@ for E in range(K): # type: ignore
             Partes_Validas+=Counter[E]*(Counter[E]-1) #pares en el mismo residuo
         elif Complemento<E:
             Partes_Validas+=Counter[E]*Counter[Complemento] #pares dentro del residuo y su complemento
-    return Partes_Validas 
+        return Partes_Validas # type: ignore
 
 T=int(input()) #multiples casos de prueba
 
